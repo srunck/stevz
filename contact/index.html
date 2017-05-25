@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-    <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../resources/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../resources/css/style.css" type="text/css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Sheyenne Valley Media|Web Solutions</title>
@@ -30,7 +30,7 @@
             </ul>
           </li>
           <li><a href="#">Website Questionnaire</a></li>
-          <li><a href="./contact/index.html">Contact</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -43,10 +43,28 @@
 
              <h1>Sheyenne Valley Media</h1>
              <h2>THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION.</h2>
-             <p>Please check back again soon!</p>
+             <p>Contact Page</p>
            <!-- </div>
          </div>
        </div> -->
+    </div>
+
+    <div id="form-wrap">
+      <form action="contact.php" method="post">
+        <fieldset>
+          <h4>Contact Us:</h4>
+          <label class="labelone" for="name">Name:</label>
+          <input name="name"/>
+          <label for="email">Email: </label>
+          <input name="email"/>
+          <label for="comments">Comments: </label>
+          <textarea name="comments"></textarea>
+        </fieldset>
+        <fieldset>
+          <input class="btn" type="submit" value="Send Email">
+          <input class="btn" type="reset" value="Reset Form">
+        </fieldset>
+      </form>
     </div>
 
     <!-- footer section -->

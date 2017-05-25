@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -18,11 +23,145 @@ body {
   margin-left: auto;
 }
 
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+    font-family: "Damion", cursive;
+    font-size: 1.75rem;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.dropdown-menu>li>a {
+  color: rgb(185,127,64);
+  background-color: black;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-nav>li,
+.dropdown-menu>li>a,
+.navbar-inverse .navbar-nav>.active>a {
+  color: rgb(255,255,255);
+  background-color: rgb(34,34,34);
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-nav>li:hover,
+.dropdown-menu>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(88,88,88);
+}
+
+.main-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*.row.banner {
+  text-align: center;
+}*/
+.navbar-header h4 {
+  color: rgb(185,127,64);
+  font-style: italic;
+  padding-left: 75px;
+}
+
 .navbar-nav {
   float: right;
+}
+
+.main-banner {
+    background: url(../../resources/images/wood.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+    margin-top: -20px;
 }
 
 .row {
   margin-right: -15px;
   margin-left: -15px;
+}
+
+/*footer*/
+.footer a {
+  color: rgb(255,255,255);
+  padding: 15px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  background-color: rgb(84,84,84);
+}
+
+.footer {
+  color: rgb(255,255,255);
+  background-color: rgb(34,34,34);
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  padding-top: 32px;
+  align-items: center;
+  height: 45rem;
+}
+
+/*contact page*/
+#form-wrap {
+  width: 600px;
+  border: 5px solid #ccc;
+  background-color: #afc8de;
+  margin: 50px auto;
+  padding: 20px 0;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin: 5px 0 5px 20px;
+  font: 18px sans-serif;
+  color: #888;
+}
+input {
+  width: 250px;
+  margin: 0 0 0 20px;
+}
+
+textarea {
+  width: 250px;
+  margin: 0 0 0 20px;
+}
+
+fieldset {
+  border: none;
+  background-color: #f6f6f6;
+  padding: 0 0 20px 0;
+}
+
+.labelone {
+  margin-top: 10px;
+}
+
+.btn {
+  width: 125px;
+}
+
+form h4 {
+  margin: 20px 0 0 30px;
+  font: 24px sans-serif;
+  color: #cdcdcd;
+  font-weight: bold;
 }
