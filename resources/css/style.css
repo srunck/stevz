@@ -6,9 +6,14 @@ body {
   background-color: white;
   min-width: 570px;
   font-family: "Righteous", sans-serif;
+  font-size: 16px;
   line-height: 2.5;
   color: #4a4a4a;
   margin: 0;
+}
+
+p {
+  font-size: 1rem;
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
@@ -17,8 +22,8 @@ body {
 }
 
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -44,7 +49,7 @@ body {
 
 .navbar-inverse .navbar-brand,
 .navbar-nav>li,
-.dropdown-menu>li>a,
+.dropdown-menu li a,
 .navbar-inverse .navbar-nav>.active>a {
   color: rgb(255,255,255);
   background-color: rgb(34,34,34);
@@ -58,17 +63,6 @@ body {
   background-color: rgb(88,88,88);
 }
 
-.main-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/*.row.banner {
-  text-align: center;
-}*/
 .navbar-header h4 {
   color: rgb(185,127,64);
   font-style: italic;
@@ -79,13 +73,53 @@ body {
   float: right;
 }
 
-.main-banner {
-    background: url(../../resources/images/wood.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 10rem;
-    margin-top: -20px;
+.navbar-toggle {
+  float: left;
+}
+
+/*navbar section*/
+@media (max-width: 767px) {
+  .navbar-nav {
+    float: left;
+  }
+
+  .navbar-inverse .navbar-brand {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    padding: 7px 15px 15px 0px;
+  }
+
+  .navbar-toggle {
+    margin-right: 0px;
+  }
+
+}
+
+.main-banner .banner-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(../../resources/images/littleyellowstone-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*height: 50rem;*/
+  margin-top: -20px;
+  /*padding-top: 6.5rem;*/
+}
+
+.main-banner h1 {
+  color: white;
+  font-size: 4.25rem;
+  font-style: italic;
+  padding: 120px 0 0;
+}
+
+.main-banner h2 {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 0 120px;
 }
 
 .row {

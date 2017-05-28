@@ -2,59 +2,69 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-    <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/resources/css/reset.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/resources/css/style.css" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <title>Sheyenne Valley Media|Web Solutions</title>
+    <meta name=robots content=NOODP>
   </head>
   <body>
     <!-- nav section -->
     <nav class="navbar navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Sheyenne Valley Media</a><br>
-          <!-- <h4>Go Everywhere !</h4> -->
-        </div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle navbar-left" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html">Sheyenne Valley Media</a><br>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <!-- <li class="active"><a href="www.dougstevenz.com/index.html">Home</a></li> -->
-          <!-- <li><a href="#">About</a></li> -->
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
-            <span class="caret"></span></a>
+          <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Website Construction</a></li>
               <li><a href="#">Voice Talent</a></li>
             </ul>
           </li>
           <li><a href="#">Website Questionnaire</a></li>
-          <li><a href="./contact/index.html">Contact</a></li>
+          <li><a href="/contact/index.html">Contact</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+
+
 
     <!-- banner section -->
-    <div class="main-banner">
+    <div class="container-fluid main-banner">
        <!-- <div class="container">
          <div class="row banner">
            <div class="col-xs-12"> -->
 
+           <div class="banner-div">
+             <!-- <h1>GO EVERYWHERE</h1> -->
+             <!-- <h2>Web design for people on the go.</h2> -->
              <h1>Sheyenne Valley Media</h1>
-             <h2>THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION.</h2>
-             <p>Please check back again soon!</p>
+             <h2>This website is currently under construction.</h2>
+           </div>
+
            <!-- </div>
          </div>
        </div> -->
     </div>
 
     <!-- footer section -->
-    <div class="footer">
-      <!-- <h3><a href="/contact">Contact Us</a></h3> -->
-
-    </div>
-
+    <!--#include virtual="/footer.html" -->
 
 
   </body>
