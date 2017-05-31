@@ -1,5 +1,6 @@
 document.write('\
-<nav class="navbar navbar-inverse">\
+\
+<nav class="navbar navbar-inverse navbar-fixed-top">\
   <div class="container">\
     <div class="navbar-header">\
       <button type="button" class="navbar-toggle navbar-left" data-toggle="collapse" data-target="#myNavbar">\
@@ -9,6 +10,7 @@ document.write('\
       </button>\
       <a class="navbar-brand" href="/index.html">Sheyenne Valley Media</a><br>\
     </div>\
+
     <div class="collapse navbar-collapse" id="myNavbar">\
       <ul class="nav navbar-nav">\
         <li class="dropdown">\
@@ -20,9 +22,10 @@ document.write('\
           </ul>\
         </li>\
         <li><a href="#">Website Questionnaire</a></li>\
-        <li><a href="/contact/index.html">Contact</a></li>\
+        <li><a href="./contact/index.html">Contact</a></li>\
       </ul>\
     </div>\
   </div>\
 </nav>\
+\
 ');

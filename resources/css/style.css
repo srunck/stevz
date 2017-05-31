@@ -4,21 +4,18 @@ html {
 
 body {
   background-color: white;
-  min-width: 570px;
+  /*min-width: 570px;*/
   font-family: "Righteous", sans-serif;
   font-size: 16px;
   line-height: 2.5;
   color: #4a4a4a;
   margin: 0;
+  /*padding-top: 51px;*/
+
 }
 
 p {
   font-size: 1rem;
-}
-
-.h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .container-fluid {
@@ -29,13 +26,14 @@ p {
 }
 
 .navbar-inverse .navbar-brand {
-    color: #ffffff;
-    font-family: "Damion", cursive;
-    font-size: 1.75rem;
+  background-color: rgb(32,32,32);
+  color: rgb(255,255,255);
+  font-family: "Damion", cursive;
+  font-size: 1.75rem;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #ffffff;
+  color: rgb(255,255,255);
 }
 
 .dropdown-menu {
@@ -47,12 +45,13 @@ p {
   background-color: black;
 }
 
-.navbar-inverse .navbar-brand,
+.navbar-inverse,
 .navbar-nav>li,
 .dropdown-menu li a,
 .navbar-inverse .navbar-nav>.active>a {
   color: rgb(255,255,255);
-  background-color: rgb(34,34,34);
+  background-color: rgb(32,32,32);
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -95,31 +94,37 @@ p {
 
 }
 
-.main-banner .banner-div {
+.main-banner {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  height: 200px;
   background: url(../../resources/images/littleyellowstone-desktop.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: 0px;
+  background-position-y: 69%;
   background-size: cover;
-  /*height: 50rem;*/
-  margin-top: -20px;
-  /*padding-top: 6.5rem;*/
 }
 
 .main-banner h1 {
   color: white;
-  font-size: 4.25rem;
+  text-align: center;
+  /*font-size: 4.25rem;*/
   font-style: italic;
-  padding: 120px 0 0;
+  /*padding: 120px 0 0;*/
 }
 
-.main-banner h2 {
-  color: white;
-  font-size: 1.5rem;
-  padding: 10px 0 120px;
+/*banner section*/
+@media (max-width: 767px) {
+  .main-banner {
+    height: 200px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+
+  .main-banner h1 {
+    font-size: 1.125rem;
+  }
 }
 
 .row {
@@ -140,26 +145,22 @@ p {
 
 .footer {
   color: rgb(255,255,255);
-  background-color: rgb(34,34,34);
+  background-color: rgb(0,0,0);
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
   padding-top: 32px;
   align-items: center;
-  height: 45rem;
+  height: 16rem;
+}
+
+.footer h2 {
+  font-size: 1rem;
 }
 
 /*contact page*/
-#form-wrap {
-  width: 600px;
-  border: 5px solid #ccc;
-  background-color: #afc8de;
-  margin: 50px auto;
-  padding: 20px 0;
-}
-
 form {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 
